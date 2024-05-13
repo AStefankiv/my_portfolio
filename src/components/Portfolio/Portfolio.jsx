@@ -26,14 +26,14 @@ const Portfolio = () => {
 
 
         <div className={`flexCenter ${css.showCase}`}>
-        <a target="_blank" rel="noopener noreferrer">
-            <motion.img variants={fadeIn("up", "tween", 0.5, 0.6)} src="./showCase1.gif" alt="project" style={{ width: "400px", height: "auto", borderRadius: "10px" }} />
+        <a href="https://github.com/AStefankiv/jungle" target="_blank" rel="noopener noreferrer">
+            <motion.img variants={fadeIn("up", "tween", 0.5, 0.6)} src="./showCase1.gif" alt="project" style={{ width: "350px", height: "auto", borderRadius: "10px" }} />
           </a>
           <a href="https://github.com/AStefankiv/tinyapp" target="_blank" rel="noopener noreferrer">
-            <motion.img variants={fadeIn("up", "tween", 0.7, 0.6)} src="./showCase2.gif" alt="project" style={{ width: "400px", height: "auto", borderRadius: "10px" }} />
+            <motion.img variants={fadeIn("up", "tween", 0.7, 0.6)} src="./showCase2.gif" alt="project" style={{ width: "350px", height: "auto", borderRadius: "10px" }} />
           </a>
           <a href="https://github.com/AStefankiv/tweeter" target="_blank" rel="noopener noreferrer">
-            <motion.img variants={fadeIn("up", "tween", 0.9, 0.6)} src="./showCase3.gif" alt="project" style={{ width: "400px", height: "auto", borderRadius: "10px" }} />
+            <motion.img variants={fadeIn("up", "tween", 0.9, 0.6)} src="./showCase3.gif" alt="project" style={{ width: "350px", height: "auto", borderRadius: "10px" }} />
           </a>
         </div>
       </div>
