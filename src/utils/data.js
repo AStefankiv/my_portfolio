@@ -79,6 +79,9 @@ export const comments = [
   {
     img: "./next_js.png"
   },
+  {
+    img: "./prisma.png"
+  },
 ];
 
 export const sliderSettings = {
