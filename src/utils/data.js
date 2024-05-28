@@ -73,7 +73,7 @@ export const comments = [
     img: "./next_js.png"
   },
   {
-    img: "/dist/prisma.png"
+    img: "/public/prisma.png"
   }
 ];
 
