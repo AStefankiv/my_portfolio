@@ -42,13 +42,6 @@ export const workExp = [
     detail:
       "As an ESL tutor, I tailored lessons to diverse cultural backgrounds and age groups, using interactive methods to enhance language proficiency. I integrated technology to create engaging learning environments, fostering confident English language learners.",
   },
-  // {
-  //   place: "Global Solution",
-  //   tenure: "Aug 2014 - Sep 2016",
-  //   role: "Sr. Product Designer",
-  //   detail:
-  //     "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  // },
 ];
 
 export const comments = [
@@ -80,8 +73,8 @@ export const comments = [
     img: "./next_js.png"
   },
   {
-    img: "./prisma.png"
-  },
+    img: "/dist/prisma.png"
+  }
 ];
 
 export const sliderSettings = {
