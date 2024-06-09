@@ -42,6 +42,13 @@ export const workExp = [
     detail:
       "As an ESL tutor, I tailored lessons to diverse cultural backgrounds and age groups, using interactive methods to enhance language proficiency. I integrated technology to create engaging learning environments, fostering confident English language learners.",
   },
+  {
+    place: "Reskill, Calgary",
+    tenure: "June 2024 - Present",
+    role: "Junior Web Developer - Internship",
+    detail:
+      "Developing websites for clients, showcasing technical skills in HTML, CSS, and JavaScript. Collaborated with clients to understand their needs and deliver custom solutions, demonstrating strong communication and problem-solving abilities.",
+  },
 ];
 
 export const comments = [
