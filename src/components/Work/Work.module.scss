@@ -36,7 +36,7 @@
 
                 .line {
                     position: absolute;
-                    height: 92%;
+                    height: 100%;
                     width: 2px;
                     background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
                     background-position: right;
@@ -50,8 +50,10 @@
                 >div {
                     flex: 1;
                     padding-top: .8rem;
-                    padding-bottom: 10.5rem;
                     z-index: 2;
+                    &:nth-child(2) {
+                        margin-top: 0rem; // Adjust this value to lower the second circle
+                    }
 
                     .circle {
                         border-radius: 50%;
@@ -59,6 +61,9 @@
                         width: 1.2rem;
                         height: 1.2rem;
                     }
+                }
+                .secondCircle {
+                    margin-top: -2rem;
                 }
             }
         }
