@@ -10,7 +10,7 @@ export const projectExperience = [
   },
   {
     name: "Front End",
-    projects: 2,
+    projects: 3,
     icon: CiImageOn,
     bg: "#EEC048",
   },
@@ -30,10 +30,10 @@ export const WhatDoIHelp = [
 export const workExp = [
   {
     place: "Reskill, Calgary",
-    tenure: "June 2024 - Present",
+    tenure: "June - August 2024",
     role: "Junior Web Developer - Internship",
     detail:
-      "Developing websites for clients, showcasing technical skills in backend, and JavaScript. Collaborated with clients to understand their needs and deliver custom solutions, demonstrating strong communication and problem-solving abilities.",
+      "Took part in developing an AI application using Next.js while collaborating with scrum team members, implemented JWT authentication. Made most commits on github.",
   },
   {
     place: "Global Village School, Calgary",
