@@ -81,6 +81,12 @@ export const comments = [
   },
   {
     img: "./prisma.png"
+  },
+  {
+    img: "./django-python.png"
+  },
+  {
+    img: "./firebase_google.png"
   }
 ];
 
