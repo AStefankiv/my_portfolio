@@ -65,8 +65,20 @@
                 .secondCircle {
                     margin-top: -2rem;
                 }
+                .thirdCircle {
+                    margin-top: -2rem;
+                }
             }
         }
 
+    }
+}
+
+@media (max-width: 480px) {
+    .progressbar .secondCircle {
+        margin-bottom: -3rem; // Adjust this value as needed to move the circle up on mobile
+    }
+    .progressbar .thirdCircle {
+        margin-bottom: 3rem; // Adjust this value as needed to move the circle up on mobile
     }
 }

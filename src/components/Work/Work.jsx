@@ -56,7 +56,7 @@ const Work = () => {
             <div><div className={css.circle} style={{background: "#286F6C"}}></div></div>
             {/* <div><div className={css.circle} style={{background: "#F2704E"}}></div></div> */}
             <div className={css.secondCircle}><div className={css.circle} style={{background: "#F2704E"}}></div></div>
-            <div className={css.secondCircle}><div className={css.circle} style={{background: "#EEC048"}}></div></div>
+            <div className={css.thirdCircle}><div className={css.circle} style={{background: "#EEC048"}}></div></div>
           </motion.div>
 
         </div>
