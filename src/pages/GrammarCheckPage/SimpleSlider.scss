@@ -1,0 +1,13 @@
+.slider-container {
+  .slick-prev, .slick-next {
+    color: #555;
+  }
+
+  .slick-dots li button:before {
+    color: #999;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #555;
+  }
+}
