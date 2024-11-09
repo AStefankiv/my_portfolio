@@ -15,13 +15,13 @@ const SimpleSlider = () => {
     <div className="slider-container">
       <Slider {...settings}>
         <div>
-          <img src="/images/screenshot1.png" alt="Screenshot 1" />
+          <img src="../../../public/grammar_gpt_1.png" alt="Screenshot 1" />
         </div>
         <div>
-          <img src="/images/screenshot2.png" alt="Screenshot 2" />
+          <img src="../../../public/grammar_gpt_2.png" alt="Screenshot 2" />
         </div>
         <div>
-          <img src="/images/screenshot3.png" alt="Screenshot 3" />
+          <img src="../../../public/grammar_gpt_3.png" alt="Screenshot 3" />
         </div>
       </Slider>
     </div>
