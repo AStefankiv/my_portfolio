@@ -14,6 +14,7 @@ import css from './styles/App.module.scss';
 const Home = () => {
   return (
     <>
+      <Header />
       <Hero />
       <Experties />
       <Work />

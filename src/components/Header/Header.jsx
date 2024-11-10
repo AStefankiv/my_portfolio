@@ -5,11 +5,14 @@ import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const menuRef = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   //to handle click outside of sidebar on mobile
   useOutsideAlerter({
@@ -28,7 +31,7 @@ const Header = () => {
     >
       <div className={`innerWidth ${css.container} flexCenter`}>
         <div className={css.name}>Andrii Stefankiv</div>
-        <ul
+        {isHomePage && (<ul
           className={`flexCenter ${css.menu}`}
           ref={menuRef}
           style={getMenuStyles(menuOpened)}
@@ -41,7 +44,7 @@ const Header = () => {
             <p>+1 (403) 998 4704</p>
             <BiPhoneCall size={"40px"} />
           </li>
-        </ul>
+        </ul>)}
 
         {/* for medium and small screens */}
         <div
