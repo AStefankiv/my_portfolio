@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -30,7 +30,9 @@ const Header = () => {
       style={{boxShadow: headerShadow}}
     >
       <div className={`innerWidth ${css.container} flexCenter`}>
-        <div className={css.name}>Andrii Stefankiv</div>
+        <div className={css.name}>
+          <a href="/">Andrii Stefankiv</a>
+        </div>
         {isHomePage && (<ul
           className={`flexCenter ${css.menu}`}
           ref={menuRef}
