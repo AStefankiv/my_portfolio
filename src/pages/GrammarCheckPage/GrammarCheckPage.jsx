@@ -10,7 +10,7 @@ const GrammarCheckPage = () => {
     <div>
       <Header />
       <section className={`innerWidth ${css.introSection}`}>
-        <h1>Grammar check</h1>
+        <h1>Grammar check app</h1>
         <br />
         <p>
           An AI-powered web app that corrects your English sentences, analyzes errors, and provides detailed explanations of your mistakes. 
