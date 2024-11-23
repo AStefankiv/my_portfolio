@@ -7,8 +7,9 @@ import SimpleSlider from "./SimpleSlider";
 
 const GrammarCheckPage = () => {
   return (
-    <div>
+    <div className="page-container">
       <Header />
+      <main className="content">
       <section className={`innerWidth ${css.introSection}`}>
         <h1>Grammar check app</h1>
         <br />
@@ -18,7 +19,6 @@ const GrammarCheckPage = () => {
       </section>
 
       <section className={css.sliderSection}>
-        <h2>Screenshots</h2>
         <SimpleSlider />
       </section>
 
@@ -35,6 +35,7 @@ const GrammarCheckPage = () => {
         </div>
       </section>
 
+        </main>
       <footer className={`flexCenter ${css.footer}`}>
         <p>© 2024 Andrii Stefankiv - All rights reserved.</p>
       </footer>
