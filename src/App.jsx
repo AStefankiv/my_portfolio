@@ -8,7 +8,7 @@ import Hero from './components/Hero/Hero';
 import Skills from './components/Skills/Skills';
 import Portfolio from './components/Portfolio/Portfolio';
 import Work from './components/Work/Work';
-import GrammarCheckPage from './pages/GrammarCheckPage/GrammarCheckPage'; // Import the new page
+import Writing from './pages/Writing/Writing';
 import css from './styles/App.module.scss';
 
 const Home = () => {
@@ -30,8 +30,8 @@ const App = () => {
     <div className={`bg-primary ${css.container}`}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Main Page */}
-          <Route path="/grammar-check" element={<GrammarCheckPage />} /> {/* New Grammar Check Page */}
+          <Route path="/" element={<Home />} />
+          <Route path="/writing" element={<Writing />} />
         </Routes>
       </Router>
     </div>

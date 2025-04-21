@@ -1,0 +1,132 @@
+.introSection {
+  text-align: center;
+  padding: 2rem 1rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #555;
+    max-width: 1000px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+
+    a {
+      color: #007acc;
+      text-decoration: underline;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #005b99;
+      }
+    }
+  }
+}
+
+.sliderSection {
+  padding: 2rem 1rem;
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+}
+
+.sliderSection {
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: -10rem;
+    color: #222;
+  }
+}
+
+.sliderContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  margin-bottom: 3rem;
+
+  a {
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  img.galleryImage {
+    width: 100%;
+    max-width: 320px;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+
+    @media (max-width: 600px) {
+      max-width: 90%;
+    }
+  }
+}
+
+.techStack {
+  text-align: center;
+  padding: 3rem 1rem;
+
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+
+  .stackIcons {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    svg {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+
+  p {
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+}
