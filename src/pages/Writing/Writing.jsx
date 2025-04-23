@@ -4,6 +4,9 @@ import css from "./Writing.module.scss";
 import { FaMarkdown, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiReadthedocs } from "react-icons/si";
 import ProjectCard from "../../../src/components/ProjectCard/ProjectCard";
+import { FaGem, FaFileAlt } from "react-icons/fa";
+import { SiAsciidoctor } from "react-icons/si";
+
 
 const imageFilenames = [
   "add_new_record.png",
@@ -91,6 +94,9 @@ const Writing = () => {
           <FaGitAlt size={40} color="#f1502f" title="Git" />
           <FaGithub size={40} color="#333" title="GitHub" />
           <SiReadthedocs size={40} color="#28a745" title="Read the Docs" />
+          <SiAsciidoctor size={40} color="#e40046" title="AsciiDoc" />
+          <FaFileAlt size={40} color="#888" title="Wikitext" />
+          <FaGem size={40} color="#cc342d" title="Jekyll" />
         </div>
       </div>
 
