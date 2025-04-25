@@ -4,6 +4,7 @@
     background: white;
 
     .container {
+        max-width: 76%;
         align-items: flex-start;
         gap: 2rem;
         flex-wrap: wrap;
@@ -13,6 +14,10 @@
 
         .leftSide {
             display: flex;
+            flex: 1;
+            @media (max-width: $sm) {
+                text-align: center;
+            }
             flex-direction: column;
             gap: 2rem;
 
@@ -60,6 +65,7 @@
                 text-align: center;
             }
             display: flex;
+            flex: 2;
             flex-direction: column;
             gap: 2rem;
 
