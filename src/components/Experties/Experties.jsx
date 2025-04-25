@@ -3,6 +3,7 @@ import { projectExperience, WhatDoIHelp } from '../../utils/data'
 import css from './Experties.module.scss'
 import {motion} from 'framer-motion'
 import {fadeIn, staggerContainer, textVariant} from '../../utils/motion.js'
+
 const Experties = () => {
   return (
     <section className={css.wrapper}>
@@ -19,14 +20,24 @@ const Experties = () => {
             <div className={css.leftSide}>
                 {
                     projectExperience.map((exp, i)=> {
-                        return <motion.div variants = {fadeIn("right", "tween", (i+1)*0.2, 1)} className={css.exp} key={i}>
+                        return<motion.div variants = {fadeIn("right", "tween", (i+1)*0.2, 1)} className={css.exp} key={i}>
                             <div style={{background: exp.bg}} className="flexCenter">
                                 <exp.icon size={25} color="white"/>
                             </div>
-                            <div>
-                                <span>{exp.name}</span>
-                                <span className='secondaryText'>{exp.projects} Projects</span>
-                            </div>
+                                <div>
+                                {exp.name === "Technical Writer" ? (
+                                    <a
+                                    href="/writing"
+                                    className="primaryText"
+                                    style={{ textDecoration: "underline", color: "inherit" }}
+                                    >
+                                    {exp.name}
+                                    </a>
+                                ) : (
+                                    <span>{exp.name}</span>
+                                )}
+                                <span className="secondaryText">{exp.projects} Projects</span>
+                                </div>
                         </motion.div>
                     })
                 }

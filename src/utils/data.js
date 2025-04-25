@@ -1,8 +1,14 @@
-import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { HiOutlineDesktopComputer, HiOutlineDocumentText } from "react-icons/hi";
 import { CiImageOn } from "react-icons/ci";
 import { MdWorkspacesOutline } from "react-icons/md";
 
 export const projectExperience = [
+  {
+    name: "Technical Writer",
+    projects: 5,
+    icon: HiOutlineDocumentText,
+    bg: "#1E90FF",
+  },
   {
     name: "Back End",
     projects: 2,
