@@ -2,6 +2,7 @@ import React from "react";
 import css from "./Work.module.scss";
 import {motion} from 'framer-motion'
 import { draw, fadeIn, slideIn, staggerChildren, textVariant2, zoomIn } from "../../utils/motion";
+
 const Work = () => {
   return (
     <motion.section 
@@ -17,36 +18,40 @@ const Work = () => {
         <span className="primaryText yPaddings">My Work Experience</span>
 
         <div className={`flexCenter ${css.experiences}`}>
+
           <motion.div variants={textVariant2} className={`flexCenter ${css.exp}`}>
             <div className={css.post}>
-              <h1><a href="https://www.pathwaypro.ca/">Reskill, Calgary</a></h1>
+              <h1><a href="https://gvenglish.com/">Global Village School – Calgary</a></h1>
+              <p>September 2022 - Present</p>
+            </div>
+            <div className={css.role}>
+              <h1>ESL Instructor</h1>
+              <p>— Designed and developed a travel-themed educational website using JavaScript: <a href="https://www.worklearntravel.ca/" target="_blank">worklearntravel.ca</a>, aligning layout and copy with user needs and branding.</p>
+              <p>— Created instructional content and around 40 lesson plans that simplified complex English grammar for ESL learners—skills highly transferable to technical documentation.</p>
+            </div>
+          </motion.div>
+
+          <motion.div variants={textVariant2} className={`flexCenter ${css.exp}`}>
+            <div className={css.post}>
+              <h1><a href="https://www.pathwaypro.ca/">Reskill – Calgary</a></h1>
               <p>June - August 2024</p>
             </div>
             <div className={css.role}>
               <h1>Junior Web Developer - Internship</h1>
-              <p>Took part in developing an <a href="https://github.com/Grant-Assist-PathwayPro/client">AI application</a> using Next.js while collaborating with scrum team members, implemented JWT authentication. Made most commits on github.</p>
+              <p>— Integrated Facebook and Google authentication into an AI-powered grant-writing platform using Next.js and TypeScript.</p>
+              <p>— Contributed the highest number of GitHub commits during the project: <a href="https://github.com/Grant-Assist-PathwayPro/client" target="_blank">Grant-Assist-PathwayPro</a>.</p>
+              <p>— Refactored and restyled the user interface using the Ant Design (Antd) component library to improve usability and visual consistency.</p>
             </div>
           </motion.div>
 
           <motion.div variants={textVariant2} className={`flexCenter ${css.exp}`}>
             <div className={css.post}>
-              <h1><a href="https://gvenglish.com/">Global Village School, Calgary</a></h1>
-              <p>Sept 2022 - Present</p>
-            </div>
-            <div className={css.role}>
-              <h1>Education</h1>
-              <p>Transformed the ESL curriculum with digital materials and assignments, showcasing digital content management skills and the use of educational technology. Created a <a href="https://www.worklearntravel.ca/" target="_blank">Next.js based website</a> that is up and running.</p>
-            </div>
-          </motion.div>
-
-          <motion.div variants={textVariant2} className={`flexCenter ${css.exp}`}>
-            <div className={css.post}>
-              <h1>ESL Tutor, Ukraine, China, Vietnam, Canada</h1>
+              <h1>Various ESL Schools – Ukraine, China, Vietnam</h1>
               <p>2015 - 2022</p>
             </div>
             <div className={css.role}>
-              <h1>Education</h1>
-              <p>As an ESL tutor, I tailored lessons to diverse cultural backgrounds and age groups, using interactive methods to enhance language proficiency. I integrated technology to create engaging learning environments, fostering confident English language learners.</p>
+              <h1>ESL Instructor</h1>
+              <p>— Delivered personalized instruction across diverse learner backgrounds, adjusting tone, style, and complexity—mirroring the skills needed to write for both technical and non-technical audiences.</p>
             </div>
           </motion.div>
 

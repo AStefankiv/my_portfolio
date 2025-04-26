@@ -30,8 +30,8 @@ export const projectExperience = [
 ];
 
 export const WhatDoIHelp = [
-  "I have skills in JavaScript and love for coding. I've collaborated with diverse teams worldwide, enhancing my ability to communicate effectively in any setting.",
-  "I`m currently seeking opportunities in web development where I can leverage my technical expertise and cooperative spirit to create impactful digital solutions!",
+  "I have skills in JavaScript and a love for coding. I've collaborated with diverse teams worldwide, enhancing my ability to communicate effectively in any setting.",
+  "I'm currently seeking opportunities as a technical writer where I can leverage my writing skills, technical knowledge, and collaborative mindset to create clear, user-friendly documentation and impactful digital content.",
 ];
 
 export const comments = [
