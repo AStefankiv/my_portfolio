@@ -11,7 +11,7 @@ export const projectExperience = [
   },
   {
     name: "Back End",
-    projects: 2,
+    projects: 1,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
@@ -23,7 +23,7 @@ export const projectExperience = [
   },
   {
     name: "Full Stack",
-    projects: 5,
+    projects: 4,
     icon: MdWorkspacesOutline,
     bg: "#F26440",
   },

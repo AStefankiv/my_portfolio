@@ -21,7 +21,7 @@ const Work = () => {
 
           <motion.div variants={textVariant2} className={`flexCenter ${css.exp}`}>
             <div className={css.post}>
-              <h1><a href="https://gvenglish.com/">Global Village School – Calgary</a></h1>
+              <h1><a href="https://gvenglish.com/" target="_blank">Global Village School – Calgary</a></h1>
               <p>September 2022 - Present</p>
             </div>
             <div className={css.role}>
@@ -33,7 +33,7 @@ const Work = () => {
 
           <motion.div variants={textVariant2} className={`flexCenter ${css.exp}`}>
             <div className={css.post}>
-              <h1><a href="https://www.pathwaypro.ca/">Reskill – Calgary</a></h1>
+              <h1><a href="https://www.pathwaypro.ca/" target="blank">Reskill – Calgary</a></h1>
               <p>June - August 2024</p>
             </div>
             <div className={css.role}>
