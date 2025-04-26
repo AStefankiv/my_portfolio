@@ -7,6 +7,13 @@
   text-align: left;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .content {
+    flex-grow: 1; // Makes sure the content takes the available space
+  }
 
   h3 {
     font-size: 1.1rem;
@@ -24,6 +31,7 @@
     color: #0070f3;
     font-weight: bold;
     text-decoration: none;
+    margin-top: auto;
 
     &:hover {
       text-decoration: underline;

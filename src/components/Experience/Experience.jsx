@@ -1,9 +1,9 @@
 import React from "react";
-import css from "./Work.module.scss";
+import css from "./Experience.module.scss";
 import {motion} from 'framer-motion'
 import { draw, fadeIn, slideIn, staggerChildren, textVariant2, zoomIn } from "../../utils/motion";
 
-const Work = () => {
+const Experience = () => {
   return (
     <motion.section 
     variants={staggerChildren}
@@ -70,4 +70,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Experience;

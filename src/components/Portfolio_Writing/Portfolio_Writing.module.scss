@@ -1,0 +1,25 @@
+.wrapper {
+    background: white;
+    overflow: hidden;
+    .techStack {
+        padding: 4rem 2rem;
+        max-width: 1700px;
+        margin: 0 auto;
+        text-align: center;
+    
+        h2 {
+        font-size: 2.5rem;
+        color: #0d0d0d;
+        margin-bottom: 3rem;
+        }
+    }
+    
+    // Project Cards container
+    .stackIcons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+}

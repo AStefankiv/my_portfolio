@@ -5,8 +5,10 @@ import styles from "./ProjectCard.module.scss";
 const ProjectCard = ({ title, description, url }) => {
   return (
     <div className={styles.card}>
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <div className={styles.content}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
       <a href={url} target="_blank" rel="noopener noreferrer">
         View on GitHub →
       </a>

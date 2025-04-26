@@ -1,40 +1,124 @@
-@import '../../styles/contants.scss';
+@import '../../styles/contants.scss'; // Make sure your constants file is correct!
 
-.wrapper{
-    background: white;
-    overflow: hidden;
-    .container{
-        flex-direction: column;
-        gap: 0.5rem;
-        .heading{
-            width: 100%;
-            justify-content: space-between;
-            align-items: flex-end;
-            flex-wrap: wrap; 
-            >:nth-child(2)
-            {
-                text-decoration: underline;
-                color: orange;
-                cursor: pointer;
-            }
-        }    
-        
-        .showCase{
-            width: 100%;
-            gap: 0.5rem;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            >img{
+/* ========== Portfolio Section ========== */
+.wrapper {
+  background: white;
+  overflow: hidden;
 
-                @media (max-width: $sm) {
-                    width: 100%;
-                }
-                border-radius: 20px;
-                max-width: 25rem;
-                max-height: 18rem;
-                box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
-                cursor: pointer;
-            }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .heading {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* <<< CENTER the text */
+        align-items: center;
+        margin-bottom: -1rem;
+      }
+      
+      .githubLink {
+        text-decoration: underline;
+        color: orange;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+      }
+        .githubLink:hover {
+            color: #007acc; /* Change to a different color on hover */
+        }      
+
+    .showCase {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 2rem;
+
+      > a {
+        /* Styling each project link */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        img {
+          border-radius: 20px;
+          max-width: 25rem;
+          max-height: 18rem;
+          width: 100%;
+          height: auto;
+          box-shadow: 0px 21px 13px rgba(0, 0, 0, 0.13); /* Corrected transparency */
+          cursor: pointer;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+          &:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 25px 18px rgba(0, 0, 0, 0.18);
+          }
         }
+      }
+
+      > div {
+        /* The middle block containing an image and 'more about it' link */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          /* Styling the 'more about it' link inside the middle div */
+          margin-top: 1rem;
+          font-weight: 500;
+          color: #007acc;
+          text-decoration: underline;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #005fa3;
+          }
+        }
+
+        img {
+          border-radius: 20px;
+          max-width: 25rem;
+          max-height: 18rem;
+          width: 100%;
+          height: auto;
+          box-shadow: 0px 21px 13px rgba(0, 0, 0, 0.13);
+          cursor: pointer;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+          &:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 25px 18px rgba(0, 0, 0, 0.18);
+          }
+        }
+      }
     }
+  }
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: $sm) {
+  .wrapper {
+    .container {
+      .showCase {
+        flex-direction: column;
+        align-items: center;
+        
+        > a,
+        > div {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }

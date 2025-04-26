@@ -7,7 +7,8 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Skills from './components/Skills/Skills';
 import Portfolio from './components/Portfolio/Portfolio';
-import Work from './components/Work/Work';
+import PortfolioWriting from './components/Portfolio_Writing/Portfolio_Writing';
+import Experience from './components/Experience/Experience';
 import Writing from './pages/Writing/Writing';
 import css from './styles/App.module.scss';
 
@@ -17,7 +18,8 @@ const Home = () => {
       <Header />
       <Hero />
       <Experties />
-      <Work />
+      <Experience />
+      <PortfolioWriting />
       <Portfolio />
       <Skills />
       <Footer />
