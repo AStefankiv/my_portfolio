@@ -11,7 +11,6 @@
         }
 
         .comments {
-            // fix for spacing between slides
             .slider :global {
                 .slick-list {
                     margin: 0 -7px;
@@ -46,12 +45,6 @@
                     top: -1rem;
                     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
                 }
-                // p{
-                //     text-align: center;
-                //     font-size: 0.9rem;
-                //     line-height: 25px;
-                // }
-
                 .bio{
                     >*{
                         display: block;
