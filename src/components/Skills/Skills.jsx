@@ -23,12 +23,10 @@ const Skills = () => {
         <div className={`flexCenter ${css.heading}`}>
           <span className="primaryText">Things I like to use:</span>
           <p style={{ marginTop: "2rem" }}>
-            {/* You can add a description of the tools you like to use here */}
           </p>
         </div>
 
         <div className={`yPaddings ${css.comments}`}>
-          {/* Slick slider for comments */}
           <Slider {...sliderSettings} className={css.slider}>
             {comments.map((comment, i) => {
               return (
