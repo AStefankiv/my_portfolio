@@ -1,8 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion"; // Don't forget to import motion
+import { motion } from "framer-motion";
 import css from "./Portfolio_Writing.module.scss";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import { staggerChildren } from "../../utils/motion"; // Assuming you have this in motion utils
+import { staggerChildren } from "../../utils/motion";
 
 const Portfolio_Writing = () => {
   return (
@@ -13,14 +13,21 @@ const Portfolio_Writing = () => {
       viewport={{ once: false, amount: 0.25 }}
       className={`paddings ${css.wrapper}`}
     >
-
       <a className="anchor" id="portfolio_writing"></a>
 
-      {/* <div className={`innerWidth flexCenter ${css.container}`}> */}
+  <div className={`innerWidth flexCenter ${css.container}`}>
+    <motion.div className={css.heading}>
+      <span className="primaryText">Writing Projects</span>
+    </motion.div>
 
-      {/* Project Cards Section */}
-      <div className={css.techStack}>
-        <h2>Writing Projects</h2>
+    <a
+      href="https://github.com/AStefankiv/writing"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`secondaryText ${css.githubLink}`}
+    >
+      More on github
+    </a>
         <div className={css.stackIcons} style={{ justifyContent: "center" }}>
           <ProjectCard
             title="Install Node.js on Ubuntu (Markdown)"
@@ -38,9 +45,9 @@ const Portfolio_Writing = () => {
             url="https://github.com/AStefankiv/writing/blob/main/NASA_api_documentation.md"
           />
           <ProjectCard
-            title="Setup GitHub Pages with a Custom Domain"
+            title="Set Up GitHub Pages with a Custom Domain"
             description="A guide on creating a GitHub Page and linking it to your own domain name."
-            url="https://github.com/AStefankiv/writing/blob/main/setup_a_github_page_with_a_custom_domain.md"
+            url="https://github.com/AStefankiv/writing/blob/main/set_up_a_github_page_with_a_custom_domain.md"
           />
           <ProjectCard
             title="How to Brew Bulletproof Espresso at Home"
@@ -49,8 +56,7 @@ const Portfolio_Writing = () => {
           />
         </div>
       </div>
-      {/* </div> */}
-    </motion.section> // Don't forget to close the motion.section tag
+    </motion.section>
   );
 };
 

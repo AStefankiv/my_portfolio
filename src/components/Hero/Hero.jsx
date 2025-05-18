@@ -50,8 +50,9 @@ const Hero = () => {
           </motion.div>
 
           <motion.div variants={fadeIn("left", "tween", 0.5, 1)} className={css.certificate}>
-
-              <a href="https://flowcv.com/resume/0ufv5i6h21" target="_blank" rel="noopener noreferrer"  className={`${css.resumeButton} resumeButton`}>
+              <a href="https://drive.google.com/file/d/1dIhkGEd-YlnZ3v7epmeo5cKISBVanoSp/view?usp=sharing"
+              target="_blank" rel="noopener noreferrer"
+              className={`${css.resumeButton} resumeButton`}>
               <span>My resume</span>
             </a>
           </motion.div>
